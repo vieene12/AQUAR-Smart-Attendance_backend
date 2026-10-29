@@ -70,6 +70,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseAuthentication();
 app.UseAuthorization();
+app.MapGet("/", () => Results.Ok(new
+{
+    message = "Smart Attendance API is running",
+    status = "online",
+    version = "1.0.0"
+}));
 app.MapControllers();
 
 if (app.Environment.IsDevelopment() || app.Environment.IsEnvironment("Test"))
