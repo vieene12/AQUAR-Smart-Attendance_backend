@@ -58,24 +58,16 @@ app.UseMiddleware<AccountManagementExceptionMiddleware>();
 app.UseMiddleware<AttendanceReportEmailExceptionMiddleware>();
 app.UseMiddleware<FirebaseDependencyExceptionMiddleware>();
 
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(options =>
-    {
-        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Smart Attendance API v1");
-        options.DocumentTitle = "Smart Attendance API";
-    });
-}
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Smart Attendance API v1");
+    options.DocumentTitle = "Smart Attendance API";
+});
 
 app.UseAuthentication();
 app.UseAuthorization();
-app.MapGet("/", () => Results.Ok(new
-{
-    message = "Smart Attendance API is running",
-    status = "online",
-    version = "1.0.0"
-}));
+app.MapGet("/", () => Results.Redirect("/swagger"));
 app.MapControllers();
 
 if (app.Environment.IsDevelopment() || app.Environment.IsEnvironment("Test"))
