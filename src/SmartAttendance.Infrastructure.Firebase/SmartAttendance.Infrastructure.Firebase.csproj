@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="FirebaseAdmin" />
+    <PackageReference Include="Google.Cloud.Firestore" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../SmartAttendance.Application/SmartAttendance.Application.csproj" />
+    <ProjectReference Include="../SmartAttendance.Domain/SmartAttendance.Domain.csproj" />
+  </ItemGroup>
+</Project>

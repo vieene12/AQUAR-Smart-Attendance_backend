@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SmartAttendance.Api/SmartAttendance.Api.csproj" />
+    <Project Path="src/SmartAttendance.Application/SmartAttendance.Application.csproj" />
+    <Project Path="src/SmartAttendance.Domain/SmartAttendance.Domain.csproj" />
+    <Project Path="src/SmartAttendance.Infrastructure.Firebase/SmartAttendance.Infrastructure.Firebase.csproj" />
+    <Project Path="src/SmartAttendance.Infrastructure.Reporting/SmartAttendance.Infrastructure.Reporting.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SmartAttendance.UnitTests/SmartAttendance.UnitTests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../SmartAttendance.Application/SmartAttendance.Application.csproj" />
+    <ProjectReference Include="../SmartAttendance.Infrastructure.Firebase/SmartAttendance.Infrastructure.Firebase.csproj" />
+    <ProjectReference Include="../SmartAttendance.Infrastructure.Reporting/SmartAttendance.Infrastructure.Reporting.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,3 @@
+namespace SmartAttendance.Infrastructure.Firebase.Accounts;
+
+internal static class AccountInfrastructureAssemblyMarker;

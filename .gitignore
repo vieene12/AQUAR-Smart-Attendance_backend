@@ -1,0 +1,22 @@
+**/bin/
+**/obj/
+.artifacts/
+.vs/
+TestResults/
+**/*.user
+.env
+**/appsettings.Local.json
+**/*service-account*.json
+**/firebase-adminsdk*.json
+
+# Environment and secrets
+.env.*
+!.env.example
+**/*credentials*.json
+**/application_default_credentials.json
+**/*.p12
+**/*.pfx
+
+# Logs and temporary files
+**/*.log
+**/logs/

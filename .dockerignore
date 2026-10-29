@@ -1,0 +1,10 @@
+**/bin/
+**/obj/
+.artifacts/
+.vs/
+TestResults/
+**/*.user
+.env
+**/appsettings.Local.json
+**/*service-account*.json
+**/firebase-adminsdk*.json
